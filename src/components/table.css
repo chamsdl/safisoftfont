@@ -1,0 +1,423 @@
+
+
+/* Reset box-sizing */
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    font-family: var(--font-family-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    z-index: 1;
+    background-color: transparent !important;
+    color: rgb(252, 248, 248) !important;
+    border-collapse: collapse;
+    border: 1px solid rgb(252, 248, 248); /* Ajoute une bordure de 1px de couleur rgb(252, 248, 248) */
+}
+
+
+.table th,
+.table td {
+    z-index: 1;
+    background-color: transparent !important;
+    color: rgb(252, 248, 248) !important;
+   
+    padding: .75rem;
+    vertical-align: top;
+    border: 1px solid rgb(252, 248, 248);
+}
+
+.table thead th {
+    z-index: 1;
+    background-color: transparent !important;
+    color: rgb(252, 248, 248) !important;
+   
+    vertical-align: bottom;
+    border: 1px solid rgb(252, 248, 248);
+}
+
+/* Card styles */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    z-index: 1;
+  background-color: transparent !important;
+  color: rgb(252, 248, 248) !important;
+  border: 1px solid rgb(252, 248, 248);
+    background-clip: border-box;
+    border-radius: .25rem;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    position: relative;
+    border-top-left-radius: .25rem solid rgb(252, 248, 248);
+    border-top-right-radius: .25rem solid rgb(252, 248, 248);
+    background-color: transparent;
+    border: 1px solid rgb(252, 248, 248);
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    border-bottom-left-radius: .25rem ;
+    border-bottom-right-radius: .25rem ;
+    border: 1px solid rgb(252, 248, 248);
+    
+}
+
+/* Input group styles */
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-group > .form-control,
+.input-group > .custom-select,
+.input-group > .custom-file,
+.input-group > .input-group-append > .btn,
+.input-group > .input-group-append > .input-group-text,
+.input-group > .input-group-prepend:first-child > .btn,
+.input-group > .input-group-prepend:first-child > .input-group-text,
+.input-group > .input-group-prepend:not(:first-child) > .btn,
+.input-group > .input-group-prepend:not(:first-child) > .input-group-text {
+    border-radius: 0;
+    
+}
+
+.input-group > .form-control:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    z-index: 1;
+   
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn:not(:disabled):not(.disabled),
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+    border: 1px solid rgb(252, 248, 248); 
+}
+
+.btn-default {
+    z-index: 1;
+  background-color: transparent !important;
+  color: rgb(252, 248, 248) !important;
+ 
+    border-color: #ddd;
+  
+}
+
+/* Font Awesome styles */
+.fa,
+.fas {
+    font-weight: 900;
+    
+}
+
+.fa,
+.far,
+.fas {
+    font-family: "Font Awesome 5 Free";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+/* Miscellaneous styles */
+.text-nowrap {
+    white-space: nowrap !important;
+    
+}
+
+.float-right {
+    float: right !important;
+}
+.card-header:first-child {
+    border-radius: calc(.25rem - 0) calc(.25rem - 0) 0 0;
+    
+}
+
+.card-title {
+    float: left;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: .75rem;
+    
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    margin-top: 0;
+}
+
+.card-header > .card-tools {
+    float: right;
+    margin-right: -.625rem;
+    
+    
+}
+
+.card-header > .card-tools .input-group,
+.card-header > .card-tools .nav,
+.card-header > .card-tools .pagination {
+    margin-bottom: -.3rem;
+    margin-top: -.3rem;
+    
+}
+
+.input-group:not(.has-validation) > .form-control:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid rgb(252, 248, 248);
+}
+
+.input-group-sm > .custom-select,
+.input-group-sm > .form-control:not(textarea) {
+    height: calc(1.8125rem + 2px);
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+.input-group > .custom-file,
+.input-group > .custom-select,
+.input-group > .form-control,
+.input-group > .form-control-plaintext {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin-bottom: 0;
+}
+
+.input-group-append {
+    margin-left: -1px;
+    display: flex;
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.input-group>.input-group-append>.btn,
+.input-group>.input-group-append>.input-group-text,
+.input-group>.input-group-prepend:first-child>.btn:not(:first-child),
+.input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child),
+.input-group>.input-group-prepend:not(:first-child)>.btn,
+.input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group-append .btn,
+.input-group-prepend .btn {
+    position: relative;
+    z-index: 2;
+}
+.row{
+    margin-bottom: 50px;
+    
+}
+.input-group-sm > .custom-select,
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-append > .btn,
+.input-group-sm > .input-group-append > .input-group-text,
+.input-group-sm > .input-group-prepend > .btn,
+.input-group-sm > .input-group-prepend > .input-group-text {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    
+}
+
+.input-group-append .btn,
+.input-group-prepend .btn {
+    position: relative;
+    z-index: 2;
+    
+}
+
+/* Additional Styles */
+.card-body::after,
+.card-footer::after,
+.card-header::after {
+    display: block;
+    clear: both;
+    content: "";
+    
+}
+
+.card-body.p-0 .table tbody>tr>td:first-of-type,
+.card-body.p-0 .table tbody>tr>th:first-of-type,
+.card-body.p-0 .table tfoot>tr>td:first-of-type,
+.card-body.p-0 .table tfoot>tr>th:first-of-type,
+.card-body.p-0 .table thead>tr>td:first-of-type,
+.card-body.p-0 .table thead>tr>th:first-of-type {
+    padding-left: 1.5rem;
+    
+}
+
+.card-body>.table>thead>tr>td,
+.card-body>.table>thead>tr>th {
+    border-top-width: 0;
+    
+}
+
+.fa-search:before {
+    content: "\f002";
+    
+}
+
+.p-0 {
+    padding: 0 !important;
+    
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    
+    
+}
+.table thead th {
+    vertical-align: bottom;
+    border: 1px solid rgb(252, 248, 248);
+    
+}
+
+.table td,
+.table th {
+    padding: .75rem;
+    vertical-align: top;
+    border: 1px solid rgb(252, 248, 248);
+}
+
+th {
+    text-align: inherit;
+    text-align: -webkit-match-parent;
+    
+}
+
+.table:not(.table-dark) {
+    color: inherit;
+    
+    
+}
+
+.text-nowrap {
+    white-space: nowrap !important;
+}
+.iconinfo{
+    position: relative;
+    left: 169px;
+    height: 41px !important;
+    width: 58px !important;
+}
+.iconinfo1{
+    position: relative;
+    left: 111px;
+    margin: 16px;
+    height: 41px !important;
+    width: 58px !important;
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color:rgb(252, 248, 248);
+    background-color: transparent;
+    border-collapse: collapse;
+    
+    
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+    
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+    
+}
+.icontable{
+    margin-left: 10px;
+    margin-right: 10px;
+}

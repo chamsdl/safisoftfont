@@ -1,0 +1,362 @@
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: #8b929c !important;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0; z-index: 1000;
+  
+}
+
+
+.navbar .dropdown-toggle::after {
+    display: none !important;
+  }
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.nav-link.active .nav-link-text {
+  animation: scaleIn 1s ease forwards;
+}
+.dropdown-menu.show {
+  animation: fadeIn 0.5s ease forwards;
+}
+.navbar-nav .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 20px; 
+ 
+  margin-left: -5px; 
+  border-width: 0 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff;
+}
+
+.navbar-nav .dropdown-menu {
+  position: relative;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #000 url("./loader/10.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+  form.create-note .CustomButton {
+    position: relative;
+    right: -42px;
+    bottom: -18px;
+    background: #f5ba13;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 340px;
+    height: 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+}
+
+
+.body2 {
+  padding-top: 120px;
+}
+
+header {
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, .2);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+  
+  padding: 8px 40px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  color: #fffefe;
+}
+.dropdown-toggle{
+  color: #fff;
+}
+header Nav{
+  margin-right: 20px;
+  
+
+}
+header h1 { margin-right: 300px;
+  color: #fffefe;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.user {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.user h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.user p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.user button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+.selected-row-details{
+  position: absolute;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #071a28;
+  border: 3px solid rgb(255 255 255 / 20%);
+  backdrop-filter: blur(30px);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+  padding: 30px 40px;
+  top: 178px;
+  right: 500px;
+  z-index: 90;
+}
+.selected-row-details1{
+  position: absolute;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #071a28;
+  border: 3px solid rgb(255 255 255 / 20%);
+  backdrop-filter: blur(30px);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+  padding: 30px 40px;
+  top: 100px;
+  right: 500px;
+  z-index: 90;
+}
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #071a28;
+  border: 3px solid rgb(255 255 255 / 20%);
+  backdrop-filter: blur(30px);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+  padding: 30px 40px;
+}
+
+form.create-note .inputd{
+  width: 100%;
+  margin-bottom: 5px;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+  width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px; 
+    
+}
+form.create-note .inputde,
+form.create-note textarea {
+  width: 100%;
+  margin-bottom: 5px;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+  width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px; 
+}
+span {
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form.create-note button {
+  position: relative;
+  right: -380px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+.commande{
+  position: relative;
+    top: -286px;
+    color: white;
+    left: 40px;
+    width: 400px;
+    background: #071a28;
+    border: 3px solid rgb(255 255 255 / 20%);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    padding: 30px 40px;
+}
+form.create-note .button1 {
+  position: relative;
+  right: -325px;
+  bottom: -49px;
+  background: white;
+  color: #d33131;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+  color: black !important;
+}
+
+  
+
+form.create-note .button2 {
+  position: relative;
+  right: -289px;
+  bottom: 128px;
+  background: white;
+  color: #d33131;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+  color: black !important;
+}
+.ButtonAdd {
+  z-index: 1;
+  background-color: transparent !important;
+  color: rgb(247, 243, 243) !important;
+ 
+}
+
+
+
+/* CSS */
+.button3 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button3:disabled {
+  pointer-events: none;
+}
+
+.button3:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button3:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
